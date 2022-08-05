@@ -76,6 +76,8 @@ function score() {
     document.getElementById("myScore").innerHTML = myScore;
     document.getElementById("compScore").innerHTML = comScore;
     document.getElementById("phrase").innerHTML = " ";
+    document.getElementById("player-selected").innerHTML = "Selected: ";
+    document.getElementById("computer-selected").innerHTML = "Selected: ";
     document.getElementById("computer-rock").style.color = "black";
     document.getElementById("computer-paper").style.color = "black";
     document.getElementById("computer-scissors").style.color = "black";
@@ -88,6 +90,8 @@ function score() {
     document.getElementById("myScore").innerHTML = myScore;
     document.getElementById("compScore").innerHTML = comScore;
     document.getElementById("phrase").innerHTML = " ";
+    document.getElementById("player-selected").innerHTML = "Selected: ";
+    document.getElementById("computer-selected").innerHTML = "Selected: ";
     document.getElementById("computer-rock").style.color = "black";
     document.getElementById("computer-paper").style.color = "black";
     document.getElementById("computer-scissors").style.color = "black";
