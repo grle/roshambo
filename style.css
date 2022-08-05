@@ -52,6 +52,7 @@ h1 {
 .computer-item {
   background-color: var(--computer-color);
 }
+
 .hov:hover {
   /* background-color: var(--emphasize-color); */
   color: white;
