@@ -1,40 +1,63 @@
+:root {
+  --player-color: #95E1D3;
+  --computer-color: #F38181;
+  --bg-color: #EAFFD0;
+  --emphasize-color: #FCE38A;
+}
+
 * {
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: 'Space Mono', monospace;
 }
 
 h1 {
   text-align: center;
 }
 
+#player-selected {
+  padding-left: 10px;
+}
+
+#computer-selected {
+  padding-left: 10px;
+}
+
 /*******************FLEX CONTAINERS */
 .item-container {
   display: flex;
-  /* justify-content: space-around; */
-  /* padding: 10px; */
   align-items: center;
   max-width: 330px;
 }
 
 .item-container div {
-  background-color: salmon;
   text-align: center;
   width: 100px;
-  /* margin: 10px; */
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .main-container h3 {
   margin: 10px;
 }
 
-.item {
-  margin: 10px;
+.player-item {
+  background-color: var(--player-color);
 }
 
+.computer-item {
+  background-color: var(--computer-color);
+}
 .hov:hover {
-  background-color: grey;
+  /* background-color: var(--emphasize-color); */
   color: white;
   transition: .3s;
   cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .container {
@@ -42,18 +65,21 @@ h1 {
   justify-content: space-around;
   max-width: 1000px;
   margin: auto;
+  padding-top: 50px;
 }
 
 .fa-solid {
   margin: 20px auto 0 auto;
 }
 
-.bottom-phrase {
-  background-color: grey;
+.phrase-container {
+  background-color: var(--emphasize-color);
   max-width: 300px;
   margin: auto;
   padding: 30px;
   margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .phrase-item {
@@ -70,14 +96,14 @@ h1 {
 .phrase-call-out {
   margin: 10px auto 10px auto;
   padding: 10px;
-  background-color: salmon;
-}
-
-.phrase-header {
+  height: 80px;
   background-color: white;
+  border-radius: 10px;
 }
 
-/* .container div {
-
-  flex-direction: column;
-} */
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}

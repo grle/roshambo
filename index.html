@@ -3,68 +3,25 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Rock, Paper, Scissors</title>
+  <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=yes">
+  <title>Roshambo</title>
 
   <!-- add -->
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/02d5cf44c4.js" crossorigin="anonymous"></script>
+
+  <!-- language -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <h1>Rock, Paper, Scissors</h1>
-
-  <div class="container">
-
-    <!-- user -->
-    <div class="main-container">
-      <h3>Player</h3>
-      <div class="item-container">
-        <div class="item hov" type="button" onclick="selectRock()">
-          <!-- type="rock" -->
-          <!-- <i class="fa-solid fa-circle"></i> -->
-          <i class="fa-solid fa-hand-back-fist"></i>
-          <p>Rock</p>
-        </div>
-        <div class="item hov" type="button" onclick="selectPaper()">
-          <!-- <i class="fa-solid fa-square-full"></i> -->
-          <i class="fa-solid fa-hand"></i>
-          <p>Paper</p>
-        </div>
-        <div class="item hov" type="button" onclick="selectScissor()">
-          <!-- <i class="fa-solid fa-scissors"></i> -->
-          <i class="fa-solid fa-hand-scissors"></i>
-          <p>Scissors</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- computer -->
-    <div class="main-container">
-      <h3>Computer</h3>
-      <div class="item-container">
-        <div class="item">
-          <!-- <i class="fa-solid fa-circle"></i> -->
-          <i class="fa-solid fa-hand-back-fist"></i>
-          <p>Rock</p>
-        </div>
-        <div class="item">
-          <!-- <i class="fa-solid fa-square-full"></i> -->
-          <i class="fa-solid fa-hand"></i>
-          <p>Paper</p>
-        </div>
-        <div class="item">
-          <!-- <i class="fa-solid fa-scissors"></i> -->
-          <i class="fa-solid fa-hand-scissors"></i>
-          <p>Scissors</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr>
+  <h1>Roshambo</h1>
 
   <!-- text -->
-  <div class="bottom-phrase">
-    <div class="phrase-item phrase-header">
+  <div class="phrase-container">
+    <div class="phrase-item">
       <p><strong>ROUND: </strong> </p>
       <p id="round">0</p>
     </div>
@@ -76,8 +33,56 @@
       <p><strong>Computer: </strong> </p>
       <p id="compScore">0</p>
     </div>
-    <div class="phrase-item phrase-call-out">
-      <strong id="phrase"></strong>
+    <div id="phrase" class="phrase-item phrase-call-out">
+      <!-- <strong id="phrase"> </strong> -->
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- user -->
+    <div class="main-container">
+      <h3>Player</h3>
+      <p id="player-selected">Selected:</p>
+      <div class="item-container">
+        <div class="player-item hov" type="button" onclick="selectRock()">
+          <!-- type="rock" -->
+          <!-- <i class="fa-solid fa-circle"></i> -->
+          <i class="fa-solid fa-hand-back-fist"></i>
+          <p>Rock</p>
+        </div>
+        <div class="player-item hov" type="button" onclick="selectPaper()">
+          <!-- <i class="fa-solid fa-square-full"></i> -->
+          <i class="fa-solid fa-hand"></i>
+          <p>Paper</p>
+        </div>
+        <div class="player-item hov" type="button" onclick="selectScissor()">
+          <!-- <i class="fa-solid fa-scissors"></i> -->
+          <i class="fa-solid fa-hand-scissors"></i>
+          <p>Scissors</p>
+        </div>
+      </div>
+    </div>
+    <!-- computer -->
+    <div class="main-container">
+      <h3>Computer</h3>
+      <p id="computer-selected">Selected:</p>
+      <div class="item-container">
+        <div id="computer-rock" class="computer-item">
+          <!-- <i class="fa-solid fa-circle"></i> -->
+          <i class="fa-solid fa-hand-back-fist"></i>
+          <p>Rock</p>
+        </div>
+        <div id="computer-paper" class="computer-item">
+          <!-- <i class="fa-solid fa-square-full"></i> -->
+          <i class="fa-solid fa-hand"></i>
+          <p>Paper</p>
+        </div>
+        <div id="computer-scissors" class="computer-item">
+          <!-- <i class="fa-solid fa-scissors"></i> -->
+          <i class="fa-solid fa-hand-scissors"></i>
+          <p>Scissors</p>
+        </div>
+      </div>
     </div>
   </div>
 
