@@ -76,6 +76,9 @@ function score() {
     document.getElementById("myScore").innerHTML = myScore;
     document.getElementById("compScore").innerHTML = comScore;
     document.getElementById("phrase").innerHTML = " ";
+    document.getElementById("computer-rock").style.color = "black";
+    document.getElementById("computer-paper").style.color = "black";
+    document.getElementById("computer-scissors").style.color = "black";
   } else if (comScore == 5) {
     myScore = 0;
     comScore = 0;
@@ -85,6 +88,9 @@ function score() {
     document.getElementById("myScore").innerHTML = myScore;
     document.getElementById("compScore").innerHTML = comScore;
     document.getElementById("phrase").innerHTML = " ";
+    document.getElementById("computer-rock").style.color = "black";
+    document.getElementById("computer-paper").style.color = "black";
+    document.getElementById("computer-scissors").style.color = "black";
   } else {
     return;
   }
